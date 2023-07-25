@@ -29,4 +29,5 @@ const authUser = (req, res, next) => {
     return res.status(500).json({ success: false, error: 'Error de autorización', message: error.message });
   }
 };
+
 module.exports = { authAdmin, authUser };
