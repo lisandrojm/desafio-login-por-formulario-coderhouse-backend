@@ -9,8 +9,8 @@ const { Router } = require('express');
 /* Importar el controlador de roles */
 const rolesController = require('./rolesController/rolesController');
 
-/* Importar el middleware de autenticación específico para Admin o User */
-const { authAdmin, authUser } = require('../../utils/auth/auth');
+/* Importar el middleware de autenticación para Public o Private */
+const { authPrivate, authPublic } = require('../../utils/auth/auth');
 
 module.exports = (app) => {
   /* Crear una nueva instancia del enrutador de Express */
@@ -21,7 +21,7 @@ module.exports = (app) => {
 
   /* Definir las rutas y asignar los controladores correspondientes */
   /* Test de middleware ath para usuarios administradores */
-  router.get('/admintest', authAdmin, rolesController.getAdmin);
+  router.get('/admintest', authPrivate, rolesController.getAdmin);
   /* Test de middleware ath para usuarios no administradores */
-  router.get('/usertest', authUser, rolesController.getUser);
+  router.get('/usertest', authPublic, rolesController.getUser);
 };

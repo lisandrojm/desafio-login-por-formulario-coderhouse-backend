@@ -9,6 +9,9 @@ const { Router } = require('express');
 /* Importar el controlador de handlebars */
 const handlebarsController = require('./handlebarsController/handlebarsController');
 
+/* Importar el middleware de autenticación  para Public o Private */
+const { authPrivate, authPublic } = require('../../utils/auth/auth');
+
 module.exports = (app) => {
   /*  Crear una nueva instancia del enrutador de Express */
   const router = new Router();
@@ -17,13 +20,13 @@ module.exports = (app) => {
   app.use('/', router);
 
   /* Definir las rutas y asignar los controladores correspondientes */
-  router.get('/products', handlebarsController.getProducts);
-  router.get('/carts/:cid', handlebarsController.getCartProductById);
+  router.get('/products', authPublic, handlebarsController.getProducts);
+  router.get('/carts/:cid', authPublic, handlebarsController.getCartProductById);
   router.get('/home', handlebarsController.getHome);
   router.get('/realtimeproducts', handlebarsController.getRealTimeProducts);
   router.get('/chat', handlebarsController.getChat);
   router.get('/', handlebarsController.getLogin);
-  router.get('/register', handlebarsController.getRegister);
+  router.get('/register', authPublic, handlebarsController.getRegister);
   /*  router.get('/api/sessions/user', handlebarsController.getProfileUser); */
   /*  router.get('/dashboard', handlebarsController.getDashboardAdmin); */
 };

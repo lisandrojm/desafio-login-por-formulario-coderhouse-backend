@@ -1,14 +1,14 @@
 /* ************************************************************************** */
 /* /src/utils/auth/auth.js - Configuración de auth.js  (middleware de autenticación)
 /* ************************************************************************** */
-const authAdmin = (req, res, next) => {
+const authPrivate = (req, res, next) => {
   try {
     // Check if the user is logged in and has admin role
     if (req.session?.user?.role === 'admin') {
       return next();
     } else {
       // Redirect to the login view if the user is not an admin
-      res.redirect('/');
+      res.redirect('/api/sessions/user');
       /* Alternatively, you can return a JSON response for API endpoints */
       // return res.status(401).json({ success: false, error: 'Error de autorización. Debes ser Admin' });
     }
@@ -16,7 +16,7 @@ const authAdmin = (req, res, next) => {
     return res.status(500).json({ success: false, error: 'Error de autorización', message: error.message });
   }
 };
-const authUser = (req, res, next) => {
+const authPublic = (req, res, next) => {
   try {
     if (req.session?.user?.role === 'user') {
       return next();
@@ -30,4 +30,4 @@ const authUser = (req, res, next) => {
   }
 };
 
-module.exports = { authAdmin, authUser };
+module.exports = { authPrivate, authPublic };
