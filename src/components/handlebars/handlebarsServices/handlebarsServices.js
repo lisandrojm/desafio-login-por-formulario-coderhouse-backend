@@ -146,22 +146,6 @@ class HandlebarsServices {
       return res.status(500).json({ success: false, error: 'Error Handlebars getRegister' });
     }
   };
-
-  getProfileUser = async (res) => {
-    try {
-      return { success: true, title: 'Profile', style: 'index.css' };
-    } catch (error) {
-      return res.status(500).json({ success: false, error: 'Error Handlebars getProfile' });
-    }
-  };
-
-  getDashboardAdmin = async (res) => {
-    try {
-      return { success: true, title: 'Dashboard', style: 'index.css' };
-    } catch (error) {
-      return res.status(500).json({ success: false, error: 'Error Handlebars getProfile' });
-    }
-  };
 }
 
 /* Exportar una instancia de la clase HandlebarsServices */
