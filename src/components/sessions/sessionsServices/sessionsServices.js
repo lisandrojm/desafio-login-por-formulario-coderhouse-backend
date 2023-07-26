@@ -4,6 +4,7 @@
 
 /* Definir la clase SessionServices */
 class SessionsServices {
+  /* Obtener session de usuario */
   getUserSession = async (req, res) => {
     try {
       const userData = req.session.user || {}; // Si la propiedad 'user' no existe, establecerla como un objeto vacío
@@ -12,19 +13,18 @@ class SessionsServices {
       return { success: false, error: 'Error en Handlebars getUserSession' };
     }
   };
+  /* Obtener session de administrador */
   getAdminSession = async (req, res) => {
     try {
-      let userData = req.session.user || {}; // If the 'user' property does not exist, set it as an empty object
+      const userData = req.session.user || {}; // Si la propiedad 'user' no existe, establecerla como un objeto vacío
 
-      // If userData is a string (e.g., 'adminCoder@coder.com'), convert it to an object
+      /* Si userData es un string (e.g., 'adminCoder@coder.com'), convertirlo en un objeto */
       if (typeof userData === 'string') {
         userData = { email: userData };
       }
 
-      // Set an 'isAdmin' property in the userData object to indicate if it is an administrator or not
       userData.isAdmin = req.session.admin || false;
 
-      // Add logs here
       console.log('isAdmin:', userData.isAdmin);
       console.log('user:', userData);
 
@@ -35,7 +35,7 @@ class SessionsServices {
     }
   };
 
-  /* Levantar session */
+  /* Obtener session con contador de visitas */
   getSession = async (req, res) => {
     try {
       if (req.session.counter) {

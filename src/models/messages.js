@@ -16,7 +16,7 @@ const messageSchema = new Schema(
 );
 
 // Agregar índice a los campos createdAt y updatedAt
-messageSchema.index({ createdAt: 1, updatedAt: 1 });
+messageSchema.index({ createdAt: -1 });
 
 /* Crear el modelo del mensaje */
 const Message = model('Message', messageSchema);
