@@ -62,7 +62,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
    Asegúrate de reemplazar `<PUERTO_DE_LA_APP>` con el número de puerto especificado en el archivo `.env`.
 
-7. Ahora podrás utilizar la vista de chat en la aplicación.
+7. Ahora podrás utilizar la vista de Login en la aplicación.
 
 ## Credenciales de Admin para testing de roles de usuario:
 
