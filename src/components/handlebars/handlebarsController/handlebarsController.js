@@ -46,16 +46,6 @@ class HandlebarsController {
     const data = await HandlebarsServices.getRegister(res);
     return res.render('register', data);
   };
-
-  /*   getProfileUser = async (req, res) => j
-    const data = await HandlebarsServices.getProfileUser(res);
-    return res.render('profile', data);
-  }; */
-
-  /*   getDashboardAdmin = async (req, res) => {
-    const data = await HandlebarsServices.getDashboardAdmin(res);
-    return res.render('dashboard', data);
-  }; */
 }
 
 module.exports = new HandlebarsController();
