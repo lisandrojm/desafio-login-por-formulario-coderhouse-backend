@@ -25,9 +25,6 @@ class SessionsServices {
 
       userData.isAdmin = req.session.admin || false;
 
-      console.log('isAdmin:', userData.isAdmin);
-      console.log('user:', userData);
-
       return { success: true, user: userData, title: 'Dashboard', style: 'index.css' };
     } catch (error) {
       console.log(error);

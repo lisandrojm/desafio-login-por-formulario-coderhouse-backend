@@ -6,7 +6,7 @@ const { User } = require('../../../models/users');
 
 /* Definir la clase LoginServices */
 class LoginServices {
-  async login(email, password, req, res) {
+  login = async (email, password, req, res) => {
     try {
       if (email === 'adminCoder@coder.com' && password === 'adminCod3r123') {
         /* Establecer las propiedades de la sesión para el administrador */
@@ -45,7 +45,7 @@ class LoginServices {
     } catch (error) {
       return res.status(500).json({ success: false, error: 'Error durante el inicio de sesión' });
     }
-  }
+  };
   logout = async (req, res) => {
     try {
       await new Promise((resolve, reject) => {
