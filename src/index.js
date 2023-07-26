@@ -127,7 +127,7 @@ class Server {
         store: MongoStore.create({
           mongoUrl: `${db.mongo_atlas}${db.dbName}`,
           mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true },
-          ttl: 15,
+          ttl: 1800,
         }),
         secret: config.secret_key,
         resave: true,
