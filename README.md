@@ -68,11 +68,15 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
 ### Email:
 
+```
 adminCoder@coder.com
+```
 
 ### Password:
 
+```
 adminCod3r123
+```
 
 ## Video Testing
 
