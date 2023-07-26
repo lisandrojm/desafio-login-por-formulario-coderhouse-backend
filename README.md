@@ -29,7 +29,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
 2. Navega al directorio del proyecto:
 
    ```bash
-   cd desafio_primera-practica-integradora
+   cd desafio_login-por-formulario
    ```
 
 3. Instala las dependencias del proyecto ejecutando el siguiente comando:
