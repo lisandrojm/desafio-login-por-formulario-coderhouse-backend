@@ -23,7 +23,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/lisandrojm/desafio_primera-practica-integradora
+   git clone https://github.com/lisandrojm/desafio_login-por-formulario
    ```
 
 2. Navega al directorio del proyecto:
