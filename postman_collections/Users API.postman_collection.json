@@ -55,7 +55,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/sessions/users",
+					"raw": "http://localhost:8080/api/sessions/useradmin",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -64,7 +64,7 @@
 					"path": [
 						"api",
 						"sessions",
-						"users"
+						"useradmin"
 					]
 				}
 			},
@@ -76,7 +76,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/users/:uid",
+					"raw": "http://localhost:8080/api/sessions/useradmin/:uid",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -84,13 +84,14 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"users",
+						"sessions",
+						"useradmin",
 						":uid"
 					],
 					"variable": [
 						{
 							"key": "uid",
-							"value": null
+							"value": "64bf425a84e34da9c1bab080"
 						}
 					]
 				}
@@ -112,7 +113,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/sessions/register/:uid",
+					"raw": "http://localhost:8080/api/sessions/useradmin/:uid",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -121,7 +122,7 @@
 					"path": [
 						"api",
 						"sessions",
-						"register",
+						"useradmin",
 						":uid"
 					],
 					"variable": [
@@ -140,7 +141,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/sessions/register/:uid",
+					"raw": "http://localhost:8080/api/sessions/useradmin/:uid",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -149,7 +150,7 @@
 					"path": [
 						"api",
 						"sessions",
-						"register",
+						"useradmin",
 						":uid"
 					],
 					"variable": [

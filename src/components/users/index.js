@@ -14,7 +14,7 @@ module.exports = (app) => {
   const router = new Router();
 
   /* Registrar el enrutador en la aplicación principal */
-  app.use('/api/sessions/register', router);
+  app.use('/api/sessions/useradmin', router);
 
   /* Definir las rutas y asgnar los controladores correspondientes */
   router.post('/', usersController.addUser);
