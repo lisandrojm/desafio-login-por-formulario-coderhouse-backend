@@ -25,7 +25,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/products",
+					"raw": "http://localhost:8080/api/sessions/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -33,7 +33,8 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"products"
+						"sessions",
+						"users"
 					]
 				}
 			},
@@ -46,7 +47,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"first_name\": \"Postman first_name\",\n  \"last_name\": \"Postman last_name\",\n  \"email\": \"postman@correo.com\",\n  \"age\": 25,\n  \"password\": \"Password123!\"\n}\n",
+					"raw": "{\n  \"first_name\": \"Postman first_name\",\n  \"last_name\": \"Postman last_name\",\n  \"email\": \"postman@correo.com\",\n  \"age\": 25,\n  \"password\": \"1234\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -54,7 +55,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/users",
+					"raw": "http://localhost:8080/api/sessions/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -62,6 +63,7 @@
 					"port": "8080",
 					"path": [
 						"api",
+						"sessions",
 						"users"
 					]
 				}
@@ -72,7 +74,26 @@
 			"name": "deleteUser",
 			"request": {
 				"method": "DELETE",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/:uid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						":uid"
+					],
+					"variable": [
+						{
+							"key": "uid",
+							"value": null
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -91,7 +112,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/users/:uid",
+					"raw": "http://localhost:8080/api/sessions/register/:uid",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -99,7 +120,36 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"users",
+						"sessions",
+						"register",
+						":uid"
+					],
+					"variable": [
+						{
+							"key": "uid",
+							"value": "64b6551ad97383c9da931d17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/sessions/register/:uid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sessions",
+						"register",
 						":uid"
 					],
 					"variable": [

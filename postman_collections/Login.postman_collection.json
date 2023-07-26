@@ -8,12 +8,12 @@
 	},
 	"item": [
 		{
-			"name": "getLogin",
+			"name": "getLogout",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/sessions/login?username=pepe&password=pepepass",
+					"raw": "http://localhost:8080/api/sessions/logout",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -22,17 +22,7 @@
 					"path": [
 						"api",
 						"sessions",
-						"login"
-					],
-					"query": [
-						{
-							"key": "username",
-							"value": "pepe"
-						},
-						{
-							"key": "password",
-							"value": "pepepass"
-						}
+						"logout"
 					]
 				}
 			},
