@@ -5,7 +5,7 @@
 Este repositorio contiene la implementación del primer login por formulario. Un sistema de login completo utilizando router , motor de plantillas
 Handlebars y base de datos MongoDB para usuarios y sesiones.
 
-Se cuenta con una estructura de router para sessions en /api/sessions/ el cual contiene métodos pararegistrar a un usuario y para su respectivo login.
+Se cuenta con una estructura de router para sessions en /api/sessions/ el cual contiene métodos para registrar a un usuario y para su respectivo login.
 
 Cuenta además con un router de vistas en la ruta base / para llevar al formulario de login, de registro y de perfil.
 
@@ -64,7 +64,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
 7. Ahora podrás utilizar la vista de chat en la aplicación.
 
-## Video Test Chat
+## Video Testing
 
 (VIDEO)
 
