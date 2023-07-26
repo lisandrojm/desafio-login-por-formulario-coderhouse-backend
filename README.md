@@ -82,6 +82,10 @@ adminCod3r123
 
 (VIDEO)
 
+
+https://github.com/lisandrojm/desafio_login-por-formulario/assets/35199683/1033b431-2d18-4f75-9e8c-32a04c8fca85
+
+
 ## Estructura del proyecto (directorios relevantes para el desafío)
 
 Aquí tienes la estructura del proyecto con descripciones para cada directorio:
