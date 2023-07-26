@@ -64,6 +64,16 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
 7. Ahora podrás utilizar la vista de chat en la aplicación.
 
+## Credenciales de Admin para testing de roles de usuario:
+
+### Email:
+
+adminCoder@coder.com
+
+### Password:
+
+adminCod3r123
+
 ## Video Testing
 
 (VIDEO)
