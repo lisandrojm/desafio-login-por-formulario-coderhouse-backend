@@ -27,6 +27,4 @@ module.exports = (app) => {
   router.get('/chat', handlebarsController.getChat);
   router.get('/', handlebarsController.getLogin);
   router.get('/register', handlebarsController.getRegister);
-  /*  router.get('/api/sessions/user', handlebarsController.getProfileUser); */
-  /*  router.get('/dashboard', handlebarsController.getDashboardAdmin); */
 };

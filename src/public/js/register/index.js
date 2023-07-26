@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Realizar una solicitud POST al servidor con los datos del formulario
-    fetch('/api/sessions/register', {
+    fetch('/api/sessions/useradmin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
