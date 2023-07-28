@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (response.ok) {
           // Redirigir al usuario a la URL deseada después de que se haya agregado el usuario correctamente
           swal('Usuario registrado', 'Loguéate con tu Email y Password', 'success').then(function () {
-            window.location.href = 'http://localhost:8080/';
+            window.location.href = '/';
           });
         } else {
           // Si la respuesta no es exitosa, analiza el cuerpo de la respuesta como JSON
