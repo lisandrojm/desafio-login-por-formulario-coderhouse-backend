@@ -82,9 +82,7 @@ adminCod3r123
 
 (VIDEO)
 
-
 https://github.com/lisandrojm/desafio_login-por-formulario/assets/35199683/1033b431-2d18-4f75-9e8c-32a04c8fca85
-
 
 ## Estructura del proyecto (directorios relevantes para el desafío)
 
@@ -104,7 +102,7 @@ El proyecto sigue la siguiente estructura de directorios:
 
   - `/src/components/users/index.js`: Archivo de entrada de users que exporta los componentes relacionados.
   - `/src/components/users/usersController/usersController.js`: Controlador de usuarios para gestionar la lógica de negocio.
-  - `/src/components/messages/usersServices/usersServices.js`: Servicios de usuarios para interactuar con la capa de datos relacionados con los mensajes.
+  - `/src/components/messages/usersServices/usersServices.js`: Servicios de usuarios para interactuar con la capa de datos relacionados con los usuarios.
 
 - `/src/config`: Contiene los archivos de configuración de la aplicación.
 
@@ -113,13 +111,13 @@ El proyecto sigue la siguiente estructura de directorios:
 
 - `/src/models`: Contiene los modelos de datos de la aplicación.
 
-  - `/src/models/users.js`: Modelo de mensajes definido con Mongoose para representar los datos de los usuarios.
+  - `/src/models/users.js`: Modelo de usuarios definido con Mongoose para representar los datos de los usuarios.
 
 - `/src/public`: Contiene los archivos públicos de la aplicación, como estilos CSS, imágenes y scripts JavaScript.
 
 - `/src/routes`: Contiene los archivos de definición de rutas de la aplicación.
 
-  - `/src/routes/index.js`: Archivo de definición de rutas que exporta las rutas para los mensajes.
+  - `/src/routes/index.js`: Archivo de definición de rutas que exporta las rutas.
 
 - `/src/utils/auth`: Contiene los archivos relacionados con la configuración de la autentificación.
 
